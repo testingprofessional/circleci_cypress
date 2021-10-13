@@ -8,7 +8,7 @@ describe('Ga naar de Google website', () => {
 
     it('tik wat text in the zoekbar en klik enter en check het eerste resultaat', () => {
         const text = 'test'
-        cy.contains('Ik ga akkoord').click()
+        //cy.contains('Ik ga akkoord').click()
         cy.get('[name="q"]').type(`${text}{enter}`)
         cy.contains('COVID').should('exist')
     })
